@@ -1,0 +1,13 @@
+h1{
+    /* text-align work respected to parent */
+    text-align: center; 
+    border: solid;
+    width: 50%;
+    text-decoration:wavy blue underline;
+}
+h2{
+    font-weight: 800;
+}
+p{
+    line-height: 2;
+}

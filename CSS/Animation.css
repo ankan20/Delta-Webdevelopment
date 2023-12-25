@@ -1,0 +1,33 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+}
+h1 {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Animation on Font-Size */
+@keyframes fontAnimation {
+    form {
+        font-size:20px;
+    }
+    to {
+        font-size:50px;
+    }
+}
+@media (max-width:400px){
+    h1{
+        background-color: red;
+        color: whitesmoke;
+    }
+}

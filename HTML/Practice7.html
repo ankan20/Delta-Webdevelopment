@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Table & Form</title>
+</head>
+<body>
+    <table border="2px solid black">
+        <caption><h5>A test Table With merged cells</h5></caption>
+        <thead>
+            <tr>
+                <td colspan="1" rowspan="2"></td>
+                <td colspan="2">Average</td>
+                <td colspan="2" rowspan="2">Red eyes</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>Weight</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td colspan="2">40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td colspan="2">43%</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Registration Form</h1>
+    <form action="/server">
+        <div>
+            <input type="text" placeholder="First Name" name="firstname">
+            <input type="text" placeholder="Last Name" name="lastname">
+        </div>
+            
+        <div>
+            <label for="gender">Please select gender</label>
+        <select name="gen" id="gender">
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+        </select>
+        </div>
+        <div>
+            <label for="chk">Do you agree to all terms of services?</label>
+            <input type="checkbox" name="agree"> 
+            Yes,I agree
+        </div>
+       
+        <button type="submit">Register</button>
+    </form>
+    <h3>Final URL : http://127.0.0.1:5500/server?firstname=Ankan&lastname=Das&gen=Male&agree=on</h3>
+</body>
+</html>
