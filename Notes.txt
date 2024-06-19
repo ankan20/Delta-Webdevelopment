@@ -1,0 +1,75 @@
+Express work :-
+    a)Listen
+    b)parssing
+
+
+
+Listening :-
+    app.use() :for all request
+    app.get(path,callBack) :Specefic path
+
+Sending a Response :-
+    request(req) :
+        [http -> text based] 
+        Express convert that into Object
+        Object
+    respond(res):
+        res.send()
+        res.send({object}) -> Express convert this to JSON
+
+Routing :-
+    It is process of selecting a path for traffic in a network or between or across multiple networks.
+    [/search,/pages,/login]
+
+Search :-
+    /search?q="abc"
+
+Templating :-
+    EJS (Embedded JavaScript templates)
+    EJS is a simple templating language that lets you generate HTML markup with plain JavaScript
+
+    *res.render("home.ejs") ->find for views folder and then search for the file.
+
+
+    ***INTERPOLATION SYNTAX :-
+        Interpolation refers to embedding expressions into marked up text.
+
+
+    ***app.get("/rolldice",(req,res)=>{
+    let diceVal = Math.floor(Math.random()*6) +1;
+    res.render("rolldice.ejs",{
+        diceVal 
+    });
+})
+    We can pass 2nd argument as a object which we get from database and it is a object but we use key :value as same name so we can pass only one thing as name and we can use that in our ejs file
+
+Includes -:
+    Subtemplates in ejs
+
+Serving Static Files :-
+    app.use(express.static(foldername))
+    public - name folder
+
+Handling POST Request :-
+	set up POST request route to get some response
+	Parse POST request data
+	app.use(express.urlencoded({extended:true});
+	app.use(express.json()));
+
+
+REST ::::
+    [Representational State Transfer]
+
+    REST is an architectural style that defines a set of constraints to be used for creating web services.
+
+    CRUD Operations(DB) :-
+    C-Create 
+    R-Read 
+    U-Update 
+    D-Delete
+
+    *   GET [retrieves resources]
+    *   POST [submits new data to the server]
+    *   PUT [updates existing data]
+    *   PATCH [update existing data partially]
+    *   DELETE [removes data]

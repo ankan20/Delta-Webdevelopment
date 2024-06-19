@@ -1,0 +1,47 @@
+{
+    "cats":{
+        "name":"cats",
+        "followers":25000,
+        "following":5,
+        "posts":[
+            {
+                "image":"url",
+                "likes":200,
+                "comments":12
+            },
+            {
+                "image":"url",
+                "likes":223,
+                "comments":32
+            },
+            {
+                "image":"url",
+                "likes":500,
+                "comments":19
+            }
+        ]
+    },
+    "dogs":{
+        "name":"dogs",
+        "followers":15000,
+        "following":20,
+        "posts":[
+            {
+                "image":"url",
+                "likes":500,
+                "comments":62
+            },
+            {
+                "image":"url",
+                "likes":273,
+                "comments":92
+            },
+            {
+                "image":"url",
+                "likes":220,
+                "comments":9
+            }
+        ]
+    }
+
+}
